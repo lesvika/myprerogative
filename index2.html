@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>  
+        .wrapper{
+            display:grid;
+            /*grid-template-columns:1fr 2fr 1fr;*/
+            grid-template-columns:repeat(3, 1fr);
+            grid-gap:1em;
+            /*grid-auto-rows:100px;*/
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .nested{
+            display:grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap:1em;
+
+        }
+
+       .wrapper > div{
+    background:#eee;
+    padding:1em;
+}
+.wrapper > div:nth-child(odd){
+    background:#ddd;
+}
+
+    .nested > div{
+        border:#333 1px solid;
+        padding:1em;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe and Fuck you hoes, I'm the baddest lady
+            All my shit niggas hear, I know it drive them crazy
+            5'5" thick in the thighs, and I know you want it
+            Hoes hatin and plottin they scream by the way I flaunt it
+            Doing my thing how I want is how I represent it
+            Me and my hoes down south, that's how we gon kick it
+            Spit my flow the way I do because I'm just beginning
+            Big dumb ass hoes you better pay attention
+            I'll be that bitch that'll always put it down
+            Niggas hatin me cuz I'm fuckin with they kind
+            I'll be that bitch that'll call it like it is
+            Me and dirty down gon rock this bitch, so fuck you hoes
+        </div>
+        <div class="nested">
+            <div>bitch</div>
+            <div>bitch</div>
+            <div>bitch</div>
+            <div>bitch</div>
+            <div>bitch</div>
+            <div>bitch</div>
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+        <div>
+            Jason is a hoe
+        </div>
+
+    </div>
+    
+</body>
+</html>
